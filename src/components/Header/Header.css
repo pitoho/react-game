@@ -1,0 +1,51 @@
+ul {
+    list-style: none;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    transform: rotateY(180deg);
+    transform-origin: 50% 50% 0;
+    animation: T-animation 3s linear infinite normal;
+}
+
+header ul box-icon {
+    fill: white;
+    transition: all 0.3s ease;
+    width: 36px;
+    height: 36px;
+}
+header ul box-icon[name='question-mark']:hover {
+    scale: 1.2;
+    opacity: 0.7;
+}
+
+header ul box-icon[name='heart'] {
+    fill: red;
+}
+
+header ul box-icon[name='heart']:hover {
+    scale: 1.2;
+    opacity: .7;
+}
+
+@keyframes T-animation {
+    0% {
+        transform: rotateY(-180deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}

@@ -1,0 +1,53 @@
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 1rem;
+}
+
+.card {
+    color: white;
+    width: 200px;
+    height: 300px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out, background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card.completed {
+    background: linear-gradient(to bottom, #296014, #00ff16);
+}
+.card.completed:hover {
+    background: linear-gradient(to bottom, #296014, #00ff16);
+    scale: 1.1;
+    box-shadow: 0 0 10px 3px rgba(255, 21, 21, 0.3);
+    animation: bounceCard 0.3s ease-in-out infinite alternate;
+}
+
+.card:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px 3px rgba(255, 21, 21, 0.3);
+    animation: bounceCard 0.3s ease-in-out infinite alternate;
+    background: linear-gradient(to bottom, #9127ee, #e600ea);
+}
+
+@keyframes bounceCard {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
