@@ -1,6 +1,7 @@
 {
   "name": "web-game",
   "private": true,
+  "homepage": "https://github.com/Sioloni/react-game.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
