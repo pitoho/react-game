@@ -79,7 +79,7 @@ export default function App() {
             {
                 id: 5,
                 text: 'Скажи мне, дружок, имя какое-то простое.\n' +
-                    'Четыре буквы в слове, но сила огромна,\n' +
+                    'Шесть букв в слове, но сила огромна,\n' +
                     'На платформе Java и Android сводим в кучу знания.\n' +
                     'Ответь быстро, мой друг, кто же это такой?',
                 status: false,
@@ -135,7 +135,7 @@ export default function App() {
                 <div className="win">
                     <h2>Поздравляем вы выйграли!</h2>
                     <img id="present" src={present}></img>
-                    <h4>ITHUBSKOLKOVO</h4>
+                    <h4>ITHUB</h4>
                 </div>
             </Modal>
             <Routes>
